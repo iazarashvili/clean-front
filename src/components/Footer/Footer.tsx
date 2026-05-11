@@ -18,7 +18,10 @@ function Footer() {
           <ul className="footer__list">
             <li><FaPhone className="footer__list-icon" /> 030 123 456 78</li>
             <li><FaEnvelope className="footer__list-icon" /> info@tamis-glanzwerk.de</li>
-            <li><FaMapMarkerAlt className="footer__list-icon" /> Musterstraße 123, 12345 Berlin</li>
+            <li>
+              <FaMapMarkerAlt className="footer__list-icon" />
+              <span>Musterstraße 123<br />12345 Berlin</span>
+            </li>
           </ul>
         </div>
 
@@ -40,15 +43,16 @@ function Footer() {
             <li><a href="#">AGB</a></li>
           </ul>
         </div>
+
+        <div className="footer__social">
+          <a href="#" className="footer__social-link" aria-label="Instagram"><FaInstagram /></a>
+          <a href="#" className="footer__social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
+        </div>
       </div>
 
       <div className="footer__bottom">
-        <div className="container footer__bottom-inner">
+        <div className="container">
           <p>&copy; 2026 TAMIS Glanzwerk. Alle Rechte vorbehalten.</p>
-          <div className="footer__social">
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
-          </div>
         </div>
       </div>
     </footer>
