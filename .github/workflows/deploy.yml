@@ -1,8 +1,17 @@
+# GitHub Pages: nach Push auf main bauen und unter
+# https://<USER>.github.io/<REPO-NAME>/ veröffentlichen
+#
+# pull_request → gleicher Build wie bei Push, aber kein Deploy.
+# Einmalig im Repo: Settings → Pages → Source: „GitHub Actions"
+# base-href wird in vite.config.ts gesetzt (base: '/clean-front/').
+
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -22,19 +31,25 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '22'
           cache: npm
 
       - run: npm ci
-      - run: npm run build
 
-      - uses: actions/configure-pages@v5
+      - name: Production build
+        run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: SPA refresh auf Unterpfaden (GitHub Pages 404)
+        run: cp dist/index.html dist/404.html
+
+      - name: Upload Pages artifact
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
   deploy:
+    if: github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest
     environment:
