@@ -1,0 +1,137 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  height: var(--header-height);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 32px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.header__logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-gray-800);
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.header__nav-link:hover,
+.header__nav-link--active {
+  color: var(--color-primary);
+}
+
+.header__nav-link--active {
+  font-weight: 600;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.header__social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__social-link {
+  font-size: 1.2rem;
+  color: var(--color-gray-600);
+  transition: color 0.2s;
+}
+
+.header__social-link:hover {
+  color: var(--color-primary);
+}
+
+.header__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(0, 46, 37, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.header__phone:hover {
+  background: #00251d;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 46, 37, 0.35);
+}
+
+.header__phone-icon {
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+.header__burger {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--color-white);
+    padding: 24px;
+    gap: 16px;
+    border-bottom: 1px solid var(--color-gray-200);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .header__nav--open {
+    display: flex;
+  }
+
+  .header__actions {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+}
