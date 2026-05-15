@@ -1,5 +1,5 @@
 import { FaInstagram, FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/footerLogo.png'
 import './Footer.css'
 
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
           <div className="footer__logo">
             <img src={logo} alt="TAMIS Glanzwerk" className="footer__logo-img" />
           </div>
-          <p className="footer__slogan">Sauberkeit, die Eindruck macht.</p>
+          {/* <p className="footer__slogan">Sauberkeit, die Eindruck macht.</p> */}
         </div>
 
         <div className="footer__col">

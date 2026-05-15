@@ -1,4 +1,4 @@
-import { FaEnvelope, FaFileAlt, FaSprayCan, FaArrowRight } from 'react-icons/fa'
+import { FaEnvelope, FaFileAlt, FaSprayCan } from 'react-icons/fa'
 import './HowItWorks.css'
 
 const steps = [
@@ -6,19 +6,19 @@ const steps = [
     number: '1',
     icon: <FaEnvelope />,
     title: 'Anfrage stellen',
-    text: 'Online oder telefonisch Kontakt aufnehmen.',
+    text: 'Online oder telefonisch\nKontakt aufnehmen.',
   },
   {
     number: '2',
     icon: <FaFileAlt />,
     title: 'Angebot erhalten',
-    text: 'Schnell und unverbindlich.',
+    text: 'Schnell und\nunverbindlich.',
   },
   {
     number: '3',
     icon: <FaSprayCan />,
     title: 'Reinigung beginnt',
-    text: 'Zuverlässig und pünktlich.',
+    text: 'Zuverlässig\nund pünktlich.',
   },
 ]
 
@@ -35,12 +35,22 @@ function HowItWorks() {
                   <div className="howitworks__icon">{step.icon}</div>
                   <span className="howitworks__number">{step.number}</span>
                 </div>
-                <h3 className="howitworks__title">{step.title}</h3>
-                <p className="howitworks__text">{step.text}</p>
+                <div className="howitworks__content">
+                  <h3 className="howitworks__title">{step.title}</h3>
+                  <p className="howitworks__text">{step.text}</p>
+                </div>
               </div>
               {i < steps.length - 1 && (
-                <div className="howitworks__arrow">
-                  <FaArrowRight />
+                <div className="howitworks__arrow" aria-hidden>
+                  <svg width="40" height="14" viewBox="0 0 64 14" fill="none">
+                    <path
+                      d="M0 7 L60 7 M52 1 L60 7 L52 13"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
               )}
             </div>
