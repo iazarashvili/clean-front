@@ -5,22 +5,22 @@ const reasons = [
   {
     icon: <FaUsers />,
     title: 'Feste Ansprechpartner',
-    text: 'Direkter Kontakt für schnelle Lösungen.',
+    text: 'Direkter Kontakt\nfür schnelle Lösungen.',
   },
   {
     icon: <FaClock />,
     title: 'Flexible Einsatzzeiten',
-    text: 'Wir reinigen dann, wenn es Ihnen passt.',
+    text: 'Wir reinigen dann,\nwenn es Ihnen passt.',
   },
   {
     icon: <FaEuroSign />,
     title: 'Transparente Preise',
-    text: 'Klare Angebote ohne versteckte Kosten.',
+    text: 'Klare Angebote\nohne versteckte Kosten.',
   },
   {
     icon: <FaStar />,
     title: 'Konstante Qualität',
-    text: 'Sauberkeit auf gleichbleibend hohem Niveau.',
+    text: 'Sauberkeit auf\ngleichbleibend hohem Niveau.',
   },
 ]
 

@@ -10,7 +10,7 @@ const services = [
   {
     icon: <FaBed />,
     title: 'Hotels',
-    subtitle: 'Perfekte Sauberkeit für zufriedene Gäste.',
+    subtitle: 'Perfekte Sauberkeit\nfür zufriedene Gäste.',
     items: ['Zimmerreinigung', 'Wellness- & Spa-Bereiche', 'Öffentliche Bereiche'],
     color: '#2d5a3d',
     image: hotelImg,
@@ -18,7 +18,7 @@ const services = [
   {
     icon: <FaBuilding />,
     title: 'Büros',
-    subtitle: 'Saubere Arbeitsplätze für mehr Produktivität.',
+    subtitle: 'Saubere Arbeitsplätze\nfür mehr Produktivität.',
     items: ['Unterhaltsreinigung', 'Sanitärreinigung', 'Büro- & Glasreinigung'],
     color: '#2d5a3d',
     image: officeImg,
@@ -26,7 +26,7 @@ const services = [
   {
     icon: <MdApartment />,
     title: 'Gebäude & Treppenhäuser',
-    subtitle: 'Werterhalt durch professionelle Pflege.',
+    subtitle: 'Werterhalt durch\nprofessionelle Pflege.',
     items: ['Treppenhausreinigung', 'Unterhaltsreinigung', 'Fensterreinigung'],
     color: '#2d5a3d',
     image: buildingImg,
@@ -34,7 +34,7 @@ const services = [
   {
     icon: <FaHome />,
     title: 'Privathaushalte',
-    subtitle: 'Sauberkeit zum Wohlfühlen.',
+    subtitle: 'Sauberkeit\nzum Wohlfühlen.',
     items: ['Grundreinigung', 'Regelmäßige Reinigung', 'Spezialreinigung'],
     color: '#2d5a3d',
     image: homeImg,
