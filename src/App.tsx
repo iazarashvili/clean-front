@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Features from './components/Features/Features'
@@ -6,8 +7,13 @@ import WhyUs from './components/WhyUs/WhyUs'
 import HowItWorks from './components/HowItWorks/HowItWorks'
 import CTABanner from './components/CTABanner/CTABanner'
 import Footer from './components/Footer/Footer'
+import CookieConsent from './components/CookieConsent/CookieConsent'
+import LegalModal from './components/LegalModal/LegalModal'
+import type { LegalKey } from './components/LegalModal/legalContent'
 
 function App() {
+  const [legalKey, setLegalKey] = useState<LegalKey | null>(null)
+
   return (
     <>
       <Header />
@@ -17,7 +23,9 @@ function App() {
       <WhyUs />
       <HowItWorks />
       <CTABanner />
-      <Footer />
+      <Footer onOpenLegal={setLegalKey} />
+      <CookieConsent onOpenPrivacy={() => setLegalKey('datenschutz')} />
+      <LegalModal activeKey={legalKey} onClose={() => setLegalKey(null)} />
     </>
   )
 }
