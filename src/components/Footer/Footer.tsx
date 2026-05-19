@@ -6,9 +6,14 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import logo from "../../assets/footerLogo.png";
+import type { LegalKey } from "../LegalModal/legalContent";
 import "./Footer.css";
 
-function Footer() {
+type Props = {
+  onOpenLegal: (key: LegalKey) => void;
+};
+
+function Footer({ onOpenLegal }: Props) {
   return (
     <footer className="footer" id="kontakt">
       <div className="container footer__inner">
@@ -62,20 +67,29 @@ function Footer() {
           </ul>
         </div>
 
-        {/* <div className="footer__col">
+        <div className="footer__col">
           <h4 className="footer__col-title">RECHTLICHES</h4>
           <ul className="footer__list">
             <li>
-              <a href="#">Impressum</a>
+              <button
+                type="button"
+                className="footer__link-btn"
+                onClick={() => onOpenLegal("impressum")}
+              >
+                Impressum
+              </button>
             </li>
             <li>
-              <a href="#">Datenschutz</a>
-            </li>
-            <li>
-              <a href="#">AGB</a>
+              <button
+                type="button"
+                className="footer__link-btn"
+                onClick={() => onOpenLegal("datenschutz")}
+              >
+                Datenschutz
+              </button>
             </li>
           </ul>
-        </div> */}
+        </div>
 
         <div className="footer__social">
           <a
