@@ -1,5 +1,5 @@
-import { FaArrowRight, FaPhone } from 'react-icons/fa'
-import './CTABanner.css'
+import { FaArrowRight, FaPhone } from "react-icons/fa";
+import "./CTABanner.css";
 
 function CTABanner() {
   return (
@@ -19,23 +19,31 @@ function CTABanner() {
             </svg>
           </div>
           <div className="cta-banner__content">
-            <h2 className="cta-banner__title">Bereit für perfekte Sauberkeit?</h2>
+            <h2 className="cta-banner__title">
+              Bereit für perfekte Sauberkeit?
+            </h2>
             <p className="cta-banner__text">
               Wir beraten Sie kostenlos und finden die passende Lösung für Sie.
             </p>
           </div>
           <div className="cta-banner__actions">
-            <a href="#kontakt" className="cta-banner__btn cta-banner__btn--primary">
+            <a
+              href="#kontakt"
+              className="cta-banner__btn cta-banner__btn--primary"
+            >
               Kostenlose Beratung anfragen <FaArrowRight />
             </a>
-            <a href="tel:03012345678" className="cta-banner__btn cta-banner__btn--secondary">
-              <FaPhone /> 030 123 456 78
+            <a
+              href="tel:03012345678"
+              className="cta-banner__btn cta-banner__btn--secondary"
+            >
+              <FaPhone /> +436 506 700 692
             </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default CTABanner
+export default CTABanner;

@@ -1,9 +1,18 @@
-import { FaArrowRight } from 'react-icons/fa'
-import './Hero.css'
+import { FaArrowRight } from "react-icons/fa";
+import mainBodyLogo from "../../assets/mainBodyLogo.jpg";
+import "./Hero.css";
 
 function Hero() {
   return (
     <section className="hero">
+      <div className="hero__image">
+        <img
+          src={mainBodyLogo}
+          alt="TAMIS Glanzwerk"
+          className="hero__image-img"
+        />
+      </div>
+
       <div className="container hero__inner">
         <div className="hero__content">
           <span className="hero__label">REINIGUNGSSERVICE</span>
@@ -26,17 +35,12 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="hero__image">
-          <div className="hero__image-placeholder">
-            <div className="hero__image-logo">
-              <span className="hero__image-logo-name">TAMIS</span>
-              <span className="hero__image-logo-sub">GLANZWERK</span>
-            </div>
-          </div>
-        </div>
+        {/* <div className="hero__image">
+          <img src={mainBodyLogo} alt="TAMIS Glanzwerk" className="hero__image-img" />
+        </div> */}
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
