@@ -62,7 +62,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="footer__col">
+        {/* <div className="footer__col">
           <h4 className="footer__col-title">RECHTLICHES</h4>
           <ul className="footer__list">
             <li>
@@ -75,7 +75,7 @@ function Footer() {
               <a href="#">AGB</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="footer__social">
           <a
