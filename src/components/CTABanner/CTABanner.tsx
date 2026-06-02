@@ -34,7 +34,7 @@ function CTABanner() {
               Kostenlose Beratung anfragen <FaArrowRight />
             </a>
             <a
-              href="tel:03012345678"
+              href="tel:+43 650 67 00 692"
               className="cta-banner__btn cta-banner__btn--secondary"
             >
               <FaPhone /> +43 650 67 00 692

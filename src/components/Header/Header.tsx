@@ -43,7 +43,7 @@ function Header() {
               <FaWhatsapp />
             </a>
           </div>
-          <a href="tel:03012345678" className="header__phone">
+          <a href="tel:+43 650 67 00 692" className="header__phone">
             <FaPhone className="header__phone-icon" />
             <span>+43 650 67 00 692</span>
           </a>
