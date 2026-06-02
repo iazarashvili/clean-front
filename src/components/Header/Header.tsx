@@ -45,7 +45,7 @@ function Header() {
           </div>
           <a href="tel:03012345678" className="header__phone">
             <FaPhone className="header__phone-icon" />
-            <span>+436 506 700 692</span>
+            <span>+43 650 67 00 692</span>
           </a>
         </div>
 

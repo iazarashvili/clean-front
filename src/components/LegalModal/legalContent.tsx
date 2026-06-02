@@ -30,7 +30,7 @@ export const legalContent: Record<LegalKey, LegalContent> = {
 
         <h3>Kontakt</h3>
         <p>
-          Telefon: +43 650 670 06 92
+          Telefon: +43 650 67 00 692
           <br />
           E-Mail: info@tamisglanzwerk.at
         </p>
@@ -107,7 +107,7 @@ export const legalContent: Record<LegalKey, LegalContent> = {
           <br />
           E-Mail: info@tamisglanzwerk.at
           <br />
-          Telefon: +43 650 670 06 92
+          Telefon: +43 650 67 00 692
         </p>
 
         <h3>2. Erhebung und Verarbeitung personenbezogener Daten</h3>

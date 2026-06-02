@@ -32,7 +32,7 @@ function Footer({ onOpenLegal }: Props) {
           <h4 className="footer__col-title">KONTAKT</h4>
           <ul className="footer__list">
             <li>
-              <FaPhone className="footer__list-icon" /> +436 506 700 692
+              <FaPhone className="footer__list-icon" /> +43 650 67 00 692
             </li>
             <li>
               <FaEnvelope className="footer__list-icon" />{" "}
