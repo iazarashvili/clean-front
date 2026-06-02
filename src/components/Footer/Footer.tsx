@@ -36,7 +36,7 @@ function Footer({ onOpenLegal }: Props) {
             </li>
             <li>
               <FaEnvelope className="footer__list-icon" />{" "}
-              info@tamis-glanzwerk.de
+              info@tamisglanzwerk.at
             </li>
             <li>
               <FaMapMarkerAlt className="footer__list-icon" />
