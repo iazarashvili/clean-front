@@ -41,11 +41,7 @@ const services = [
   },
 ]
 
-type Props = {
-  onSelectService: (service: string) => void;
-};
-
-function Services({ onSelectService }: Props) {
+function Services() {
   return (
     <section className="services" id="leistungen">
       <div className="container">
@@ -53,7 +49,8 @@ function Services({ onSelectService }: Props) {
         <h2 className="section-title">Für jede Umgebung die passende Reinigungslösung</h2>
         <div className="services__grid">
           {services.map((s) => (
-            <div className="services__card" key={s.title} onClick={() => onSelectService(s.title)} role="button" tabIndex={0} onKeyDown={(e) => e.key === 'Enter' && onSelectService(s.title)}>
+            <div className="services__card" key={s.title}>
+              {/* onClick={() => onSelectService(s.title)} — ფორმა დროებით გამორთულია */}
               <div className="services__card-image">
                 {s.image && (
                   <img src={s.image} alt={s.title} className="services__card-img" />

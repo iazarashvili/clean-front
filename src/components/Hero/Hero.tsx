@@ -35,9 +35,6 @@ function Hero() {
             </a>
           </div>
         </div>
-        {/* <div className="hero__image">
-          <img src={mainBodyLogo} alt="TAMIS Glanzwerk" className="hero__image-img" />
-        </div> */}
       </div>
     </section>
   );
