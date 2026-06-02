@@ -61,24 +61,21 @@ function ContactModal({ selectedService, onClose }: Props) {
     setErrorMessage("");
 
     try {
+      const formData = new FormData();
+      formData.append("access_key", WEB3FORMS_KEY);
+      formData.append("subject", `Neue Buchungsanfrage – ${form.service}`);
+      formData.append("from_name", "TAMIS Glanzwerk Buchungsformular");
+      formData.append("Leistung", form.service);
+      formData.append("Name", form.name);
+      formData.append("E-Mail", form.email);
+      formData.append("Telefon", form.phone || "—");
+      formData.append("Wunschtermin", form.date || "—");
+      formData.append("Uhrzeit", form.time || "—");
+      formData.append("Nachricht", form.message || "—");
+
       const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `Neue Buchungsanfrage – ${form.service}`,
-          from_name: "TAMIS Glanzwerk Buchungsformular",
-          Leistung: form.service,
-          Name: form.name,
-          "E-Mail": form.email,
-          Telefon: form.phone || "—",
-          Wunschtermin: form.date || "—",
-          Uhrzeit: form.time || "—",
-          Nachricht: form.message || "—",
-        }),
+        body: formData,
       });
 
       const data = await response.json();
