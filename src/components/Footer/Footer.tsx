@@ -25,6 +25,8 @@ function Footer({ onOpenLegal }: Props) {
               className="footer__logo-img"
             />
           </div>
+          <h4 className="footer__title">Sauberkeit, die Eindruck macht.</h4>
+
           {/* <p className="footer__slogan">Sauberkeit, die Eindruck macht.</p> */}
         </div>
 

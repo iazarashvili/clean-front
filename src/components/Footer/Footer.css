@@ -142,10 +142,43 @@
   .footer__inner {
     grid-template-columns: 1fr 1fr;
   }
+  .footer__brand {
+    grid-column: 1 / -1;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 420px) {
   .footer__inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Keep KONTAKT and LEISTUNGEN side-by-side */
+  .footer__inner > .footer__col:nth-child(2),
+  .footer__inner > .footer__col:nth-child(3) {
+    /* they will each occupy one column */
+  }
+
+  /* Place RECHTLICHES and social side-by-side */
+  .footer__inner > .footer__col:nth-child(4) {
+    grid-column: 1 / 2;
+  }
+
+  .footer__social {
+    grid-column: 2 / 3;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
