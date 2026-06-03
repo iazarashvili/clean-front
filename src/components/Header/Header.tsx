@@ -39,7 +39,7 @@ function Header() {
             <a href="#" className="header__social-link" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="#" className="header__social-link" aria-label="WhatsApp">
+            <a href="https://wa.me/436506700692" className="header__social-link" aria-label="WhatsApp">
               <FaWhatsapp />
             </a>
           </div>

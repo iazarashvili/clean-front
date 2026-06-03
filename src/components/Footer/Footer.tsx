@@ -101,7 +101,7 @@ function Footer({ onOpenLegal }: Props) {
           >
             <FaInstagram />
           </a>
-          <a href="#" className="footer__social-link" aria-label="WhatsApp">
+          <a href="https://wa.me/436506700692" className="footer__social-link" aria-label="WhatsApp">
             <FaWhatsapp />
           </a>
         </div>
