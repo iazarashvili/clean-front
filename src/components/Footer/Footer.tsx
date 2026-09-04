@@ -43,7 +43,7 @@ function Footer({ onOpenLegal }: Props) {
             <li>
               <FaMapMarkerAlt className="footer__list-icon" />
               <span>
-                Erzstrasse 20
+                Erzstrasse 20/15
                 <br />
                 5500 Bischofshofen
               </span>

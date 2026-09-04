@@ -21,7 +21,9 @@ export const legalContent: Record<LegalKey, LegalContent> = {
         <p>
           TAMIS Glanzwerk
           <br />
-          Erzstrasse 20
+          Inhaber: Tamuna Mikeladze
+          <br />
+          Erzstrasse 20/15
           <br />
           5500 Bischofshofen
           <br />
@@ -103,7 +105,7 @@ export const legalContent: Record<LegalKey, LegalContent> = {
         <p>
           TAMIS Glanzwerk
           <br />
-          Erzstrasse 20, 5500 Bischofshofen, Österreich
+          Erzstrasse 20/15, 5500 Bischofshofen, Österreich
           <br />
           E-Mail: info@tamisglanzwerk.at
           <br />
