@@ -37,7 +37,7 @@ function CTABanner() {
               href="tel:+43 650 67 00 692"
               className="cta-banner__btn cta-banner__btn--secondary"
             >
-              <FaPhone /> +43 650 67 00 692
+              <FaPhone />+43 650 67 00 692
             </a>
           </div>
         </div>

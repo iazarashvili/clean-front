@@ -105,6 +105,8 @@ export const legalContent: Record<LegalKey, LegalContent> = {
         <p>
           TAMIS Glanzwerk
           <br />
+          Inhaber: Tamuna Mikeladze
+          <br />
           Erzstrasse 20/15, 5500 Bischofshofen, Österreich
           <br />
           E-Mail: info@tamisglanzwerk.at
